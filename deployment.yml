@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: weatherapi-aspnetcore-deployment
+spec:
+  selector:
+    matchLabels:
+      app: weatherapi-aspnetcore-pod
+  template:
+    metadata:
+      labels:
+        app: weatherapi-aspnetcore-pod
+    spec:
+      containers:
+      - name: weatherapi-aspnetcore-container
+        image: weatherapi-aspnetcore:v2
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+        - containerPort: 80
