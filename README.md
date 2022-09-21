@@ -14,7 +14,8 @@ docker images
 
 Kubernetes:
 
-	-  Kubernetes is an opensources orchestration tool developed by google for managing microservices or containerized application across a distributed cluster of nodes.
+	-  Kubernetes is an opensources orchestration tool developed by google for managing microservices or containerized application across a distributed 
+	cluster of nodes.
 	- Kubernetes provides highly resilient infrastructure with zero downtime deployment capabilities,
 	- automatic rollback,scalling,self-healing of containers(Which consistent of auto-placement,
  auto-restart,auto-replication,and scaling of containers based on metrics)![image](https://user-images.githubusercontent.com/46166592/191474885-42fc7b82-008a-461e-ba3c-f3c145c6f872.png)
